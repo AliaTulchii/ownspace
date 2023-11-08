@@ -1,0 +1,24 @@
+.info{
+    position: relative;
+    font-size: 18px;
+    padding-left: 35px;
+
+    &--map::before, &--tel::before{
+         content: '';
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 21px;
+         height: 21px;
+         background-repeat: no-repeat;
+    }
+
+    &--map::before{
+        background-image: url('../../img/placeholder.svg');
+    }
+
+
+    &--tel::before{
+        background-image: url('../../img/call.svg');
+    }
+}
