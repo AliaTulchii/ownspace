@@ -133,6 +133,11 @@ a:hover {
   font-weight: 700;
 }
 
+.link-bold {
+  color: #d4c17f;
+  font-weight: 700;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -168,7 +173,8 @@ a:hover {
 }
 
 .nav {
-  font-size: 16px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
 }
 
 .nav__list {
@@ -358,6 +364,36 @@ a:hover {
 }
 .form_button:hover {
   background-color: #ddc676;
+}
+
+.footer {
+  padding: 72px 0 51px 0;
+  background-color: rgba(15, 139, 145, 0.8431372549);
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+}
+
+.footer__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer__nav-list {
+  display: grid;
+  gap: 15px;
+}
+
+.footer__address {
+  display: grid;
+  gap: 20px;
+}
+
+.footer__socials {
+  display: flex;
+  -moz-column-gap: 22px;
+       column-gap: 22px;
+  align-items: center;
 }
 
 .logo {
