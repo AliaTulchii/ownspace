@@ -308,7 +308,7 @@ a:hover {
 
 .cta {
   padding: 180px 0;
-  background: linear-gradient(180deg, #0d7a84 1.42%, rgba(36, 49, 51, 0) 40.52%, #0d7a84 110.1%), linear-gradient(0deg, rgba(23, 120, 131, 0.9) 0%, rgba(20, 162, 164, 0.633) 100%), url("../../img/lon.jpg");
+  background: linear-gradient(180deg, #0d7a84 1.42%, rgba(36, 49, 51, 0) 40.52%, #0d7a84 110.1%), linear-gradient(0deg, rgba(23, 120, 131, 0.9) 0%, rgba(20, 162, 164, 0.633) 100%), url("../img/lon.jpg");
 }
 
 .cta__title {
