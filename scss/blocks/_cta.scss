@@ -1,0 +1,34 @@
+.cta {
+padding: 180px 0;
+background: 
+linear-gradient(
+    180deg,
+    $dark 1.42%,
+    rgba(36, 49, 51, 0) 40.52%,
+    $dark 110.1%), 
+    linear-gradient(
+    0deg,
+    rgba(23, 120, 131, 0.9) 0%,
+    rgba(20, 162, 164, 0.633) 100%),
+    url('../../img/lon.jpg');
+}
+
+.cta__title{
+    margin-bottom: 17px;
+}
+
+.cta__wrapper{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 30px;
+}
+
+
+.cta__text{
+font-size: 16px;
+line-height: 1.5;
+}
+
+.cta__form{
+
+}

@@ -304,4 +304,71 @@ a:hover {
   right: 20px;
   bottom: 44px;
   font-size: 24px;
+}
+
+.cta {
+  padding: 180px 0;
+  background: linear-gradient(180deg, #0d7a84 1.42%, rgba(36, 49, 51, 0) 40.52%, #0d7a84 110.1%), linear-gradient(0deg, rgba(23, 120, 131, 0.9) 0%, rgba(20, 162, 164, 0.633) 100%), url("../../img/lon.jpg");
+}
+
+.cta__title {
+  margin-bottom: 17px;
+}
+
+.cta__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.cta__text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.cta__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 30px;
+}
+
+.form__input {
+  width: 255px;
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 14px;
+  transition: background-color 0.2 ease-in;
+}
+.form__input::-moz-placeholder {
+  color: #e0e0e0;
+}
+.form__input::placeholder {
+  color: #e0e0e0;
+}
+.form__input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.form__privacy {
+  font-size: 13px;
+  color: #e7e7e7;
+  text-align: center;
+}
+
+.form_button {
+  width: 255px;
+  height: 50px;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #d4c17f;
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.2 ease-in;
+}
+.form_button:hover {
+  background-color: #ddc676;
 }/*# sourceMappingURL=main.css.map */
