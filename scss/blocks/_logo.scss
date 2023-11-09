@@ -1,0 +1,17 @@
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    padding: 5px 10px;
+    font-family: $font-accent;
+    font-size: 28px;
+    border: 5px solid $accent;
+    border-radius: 15px;
+    color: $accent;
+}
+
+.logo--secondary{
+    font-size: 14px;
+    color: $white;
+}
