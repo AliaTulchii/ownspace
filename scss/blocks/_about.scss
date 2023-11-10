@@ -1,0 +1,19 @@
+.about__box{
+    position: absolute;
+    z-index:2;
+    bottom:80px;
+    left:22%;
+}
+
+.about__title{
+    color: $accent;
+    font-size: 48px;
+    font-family: $font-accent;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.about__text{
+    font-size: 20px;
+    line-height: 1.3;
+}

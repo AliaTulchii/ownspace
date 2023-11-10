@@ -1,0 +1,63 @@
+.amenities{
+    background: 
+linear-gradient(
+    180deg,
+    $dark 1.42%,
+    rgba(36, 49, 51, 0) 40.52%,
+    $dark 110.1%), 
+    linear-gradient(
+    0deg,
+    rgba(23, 120, 131, 0.9) 0%,
+    rgba(20, 162, 164, 0.633) 100%),
+    url('../img/amenities/water.jpg');
+}
+
+.amenities__title{
+    margin-bottom: 40px;
+}
+
+
+
+.amenities__item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin-bottom: 100px;
+    padding: 20px;
+    background-color: rgba(0, 128, 128, 0.715);
+}
+
+.amenities__card{
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+
+    &::after{
+        content: '';
+        position: absolute;
+        z-index: 2;
+        left: 15px;
+        top: 15px;
+        right: 15px;
+        bottom: 15px;
+        border: 3px double rgba(255, 255, 255, 0.4);
+    }
+}
+
+.amenities__item-icon{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.amenities__item-title{
+    color: $accent;
+    font-family: $font-accent;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.amenities__item-text{
+    line-height: 1.4;
+}

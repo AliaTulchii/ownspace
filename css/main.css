@@ -91,6 +91,7 @@ body {
   background-color: #0d7a84;
   color: #ffffff;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 a {
@@ -102,7 +103,8 @@ a:hover {
 }
 
 .container {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 15px;
   max-width: 1140px;
 }
@@ -169,7 +171,7 @@ a:hover {
 }
 
 .header__about {
-  padding: 30px 0 74px 0;
+  padding: 30px 0 0 0;
 }
 
 .nav {
@@ -416,6 +418,7 @@ a:hover {
 
 .hero {
   width: 100%;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -434,9 +437,78 @@ a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   position: fixed;
-  left: 0;
-  right: 0;
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+
+.about__box {
+  position: absolute;
+  z-index: 2;
+  bottom: 80px;
+  left: 22%;
+}
+
+.about__title {
+  color: #d4c17f;
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.about__text {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.amenities {
+  background: linear-gradient(180deg, #0d7a84 1.42%, rgba(36, 49, 51, 0) 40.52%, #0d7a84 110.1%), linear-gradient(0deg, rgba(23, 120, 131, 0.9) 0%, rgba(20, 162, 164, 0.633) 100%), url("../img/amenities/water.jpg");
+}
+
+.amenities__title {
+  margin-bottom: 40px;
+}
+
+.amenities__item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  margin-bottom: 100px;
+  padding: 20px;
+  background-color: rgba(0, 128, 128, 0.715);
+}
+
+.amenities__card {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.amenities__card::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 15px;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 3px double rgba(255, 255, 255, 0.4);
+}
+
+.amenities__item-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.amenities__item-title {
+  color: #d4c17f;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.amenities__item-text {
+  line-height: 1.4;
 }/*# sourceMappingURL=main.css.map */
