@@ -49,7 +49,7 @@ address {
 }
 
 /* Form */
-input, textarea, button, select {
+button, select {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -60,11 +60,9 @@ input::-ms-clear {
   display: none;
 }
 
-button, input[type=submit] {
+button {
   display: inline-block;
   box-shadow: none;
-  background-color: transparent;
-  background: none;
   cursor: pointer;
 }
 
@@ -511,4 +509,49 @@ a:hover {
 
 .amenities__item-text {
   line-height: 1.4;
+}
+
+.contact {
+  position: relative;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #0d7a84 1.42%, rgba(36, 49, 51, 0) 40.52%, #0d7a84 110.1%), linear-gradient(0deg, rgba(23, 120, 131, 0.9) 0%, rgba(20, 162, 164, 0.633) 100%), url("../../img/buildings.jpg");
+}
+
+.contact__main-title {
+  color: #d4c17f;
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contact__text {
+  font-size: 20px;
+}
+
+.contact__address-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.contact__address-title {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #d4c17f;
+}
+
+.contact__form-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contact__form-list {
+  width: 50%;
 }/*# sourceMappingURL=main.css.map */
