@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <title>Own Space</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./js/contact.js"></script>
 </head>
 
 <body>
@@ -46,9 +47,7 @@
     <main>
         <section class="contact">
             <div class="container">
-                <!-- <div class=".contact__main-content">
-
-                </div> -->
+                
                 <h1 class="contact__main-title">
                     Contact Us
                 </h1>
@@ -62,68 +61,78 @@
                 <div class="contact__form-content">
                     <ul class="contact__address-box">
                         <li class="contact__address-card">
-                            <div class="contact__address-icon--box">
+                            <div class="contact__address-content--box">
                                 <img src="./img/contact/address.png" alt="address" class="contact__address-icon">
-                            </div>
-                            <div class="contact__address-content">
                                 <h3 class="contact__address-title">Address</h3>
+                            </div>                               
                                 <p class="contact__address-text">Złota 44 Street, <br> Warsaw, Poland</p>
-                            </div>
+                            
                         </li>
                         <li class="contact__address-card">
-                            <div class="contact__address-icon--box">
+                            <div class="contact__address-content--box">
                                 <img src="./img/contact/email.png" alt="email" class="contact__address-icon">
-                            </div>
-                            <div class="contact__address-content">
                                 <h3 class="contact__address-title">Email</h3>
-                                <p class="contact__address-text">vip@ownspace.com</p>
                             </div>
+                            
+                                
+                                <p class="contact__address-text">vip@ownspace.com</p>
+                    
                         </li>
                         <li class="contact__address-card">
-                            <div class="contact__address-icon--box">
+                            <div class="contact__address-content--box">
                                 <img src="./img/contact/phone.png" alt="phone" class="contact__address-icon">
-                            </div>
-                            <div class="contact__address-content">
                                 <h3 class="contact__address-title">Phone</h3>
-                                <p class="contact__address-text">+48 22 000 00 00</p>
                             </div>
+                          
+                                
+                                <p class="contact__address-text">+48 22 000 00 00</p>
+                            
                         </li>
                     </ul>
     
                     <div class="contact__form-container">
-                        <form action="onSubmit">
-                            <h2>
+                        <form id="form" action="/">
+                            <h2 class="contact__form-title">
                                 Send Message
                             </h2>
                             <ul class="contact__form-list">
-                                <li class="contact__form-item">
+                                <li class="contact__form-item input-control">
                                     <input 
+                                    id="username"
                                     type="text"
-                                    name=""
-                                    required="required"
+                                    name="username"
+                                    class="contact__form-input"
+                                    placeholder="Full Name"
+                                    required
                                     >
-                                    <span>Full Name</span>
+                                    <p id="error" hidden>error</p>
                                 </li>
-    
-                                <li class="contact__form-item">
+
+                                <li class="contact__form-item input-control">
                                     <input 
-                                    type="text"
-                                    name=""
-                                    required="required"
+                                    id="email"
+                                    type="email"
+                                    name="email"
+                                    required
+                                    class="contact__form-input"
+                                    placeholder="Email"
+                                    
                                     >
-                                    <span>Email</span>
-                                </li>
+                                    <p id="error" hidden>Please enter a valid email address</p>
+                                </li> 
     
                                 <li class="contact__form-item">
                                     <textarea 
                                     type="text"
                                     name=""
                                     required="required"
+                                    class="contact__form-textarea "
+                                    placeholder="Type your Message..."
                                     ></textarea>
-                                    <span>Type your Message...</span>
+                                   
                                 </li>
                             </ul>
-                            <button type="submit" value="Send">Send message</button>
+                            <button type="submit"  class="form_button">Send message</button>
                         </form>
                     </div>
                 </div>
@@ -212,5 +221,7 @@
             </div>
         </div>
     </footer>
+
+    
 </body>
 </html>

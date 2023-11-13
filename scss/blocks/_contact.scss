@@ -1,5 +1,7 @@
+
 .contact{
     position: relative;
+    width: 100%;
     padding: 80px 0;
     display: flex;
     justify-content: center;
@@ -29,6 +31,7 @@
 
 .contact__text{
     font-size: 20px;
+    margin-bottom: 40px;
 }
 
 
@@ -45,17 +48,95 @@ height: 40px;
 }
 
 .contact__form-content{
-    width: 100%;
+    width: 1000px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 30px;
+
 }
 
 .contact__form-list{ 
     width: 50%;
 }
 
-.contact__address-box{
-    
+
+.contact__address-card:not(:last-child){
+    margin-bottom: 30px ;
 }
+
+.contact__address-content--box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+.contact__address-icon{
+    margin-right: 12px;
+    }
+
+.contact__form-container{
+    width: 600px;
+    height: 450px;
+    padding: 20px;
+    background-color: rgba(0, 128, 128, 0.715);
+
+}
+
+.contact__form-title{
+    font-family: $font-accent;
+    font-size: 28px;
+    font-weight: 500;
+    color: $accent;
+    margin-bottom: 20px;
+}
+
+.contact__form-item{
+    position: relative;
+    width: 100%;
+}
+
+.contact__form-input{
+width: 550px;
+padding: 10px 0;
+background-color: transparent;
+border-bottom:2px solid $accent;
+margin-bottom: 12px;
+color: $white;
+
+&::placeholder{
+    color: $accent;
+}
+}
+
+.input-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+
+}
+
+#error{
+    display: none;
+    color: #ed7474;
+    font-size: 15px;
+    height: 13px;
+}
+
+
+
+.contact__form-textarea{
+    width: 550px;
+    height: 100px;
+    background-color: transparent;
+    border-bottom:2px solid $accent;
+    margin-bottom: 45px;
+    color: $white;
+    resize: none;
+    outline: none;
+
+    &::placeholder{
+        color: $accent;
+    }
+} 
