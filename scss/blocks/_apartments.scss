@@ -9,4 +9,23 @@ display: grid;
 grid-template-columns: repeat(2, 1fr);
 // grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 gap: 30px;
+margin-bottom: 60px;
+}
+
+.apartments_button{
+    width: 255px;
+height: 50px;
+padding: 12px 20px;
+font-size: 20px;
+color: $white;
+background-color: $accent;
+font-weight: 700;
+text-align: center;
+transition: background-color 0.2 ease-in;
+
+
+&:hover{
+background-color: saturate($accent, 10%);
+color: $white;
+}
 }

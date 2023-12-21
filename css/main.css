@@ -242,6 +242,23 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  margin-bottom: 60px;
+}
+
+.apartments_button {
+  width: 255px;
+  height: 50px;
+  padding: 12px 20px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #d4c17f;
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.2 ease-in;
+}
+.apartments_button:hover {
+  background-color: #ddc676;
+  color: #ffffff;
 }
 
 .card {
@@ -284,6 +301,7 @@ a:hover {
 
 .card__img {
   position: relative;
+  height: 400px;
   z-index: 5;
   transition: all 0.2s ease-in;
 }
@@ -482,6 +500,13 @@ a:hover {
   background-color: rgba(0, 128, 128, 0.715);
 }
 
+.amenities__item:hover .amenities__card-img,
+.amenities__card {
+  transform: scale(1.1);
+  filter: contrast(110%) brightness(1) saturate(1.2);
+  transition: transform 0.4s ease-in;
+}
+
 .amenities__card {
   position: relative;
   display: inline-block;
@@ -639,4 +664,171 @@ a:hover {
 }
 .contact__form-textarea::placeholder {
   color: #d4c17f;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.flats__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  width: 820px;
+  height: 100%;
+  padding: 30px 15px;
+  background-color: rgba(92, 176, 176, 0.396);
+}
+
+.cards-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.sidebar {
+  width: 270px;
+}
+
+.flat__card {
+  position: relative;
+  width: 300px;
+  background-color: #d4c17f;
+}
+
+a.flat__card-link {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+a.flat__card-link:hover {
+  opacity: 0.8;
+  transform: translateY(-5px);
+}
+
+.flat__card-badges {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  right: 15px;
+  display: flex;
+}
+
+.flat__card-badge {
+  display: inline-block;
+  height: 22px;
+  padding: 0 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 22px;
+}
+
+.flat__card-badge--class {
+  background-color: #d4c17f;
+}
+
+.flat__card-badge--credit {
+  background-color: rgba(15, 139, 145, 0.8431372549);
+}
+
+.flat__card-badge:not(:last-child) {
+  margin-right: 10px;
+}
+
+.flat__card--content {
+  padding: 15px 15px 20px;
+}
+
+.flat__card--title {
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.16;
+  color: #ffffff;
+}
+
+.flat__card--term,
+.flat__card--metro {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #ffffff;
+}
+
+.flat__card--metro::before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: sub;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../img/apartaments/metro.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.flat__card--address {
+  font-size: 14px;
+  line-height: 1.14;
+  color: #a7a6a6;
+}
+
+.btn-more {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.295);
+  cursor: pointer;
+}
+.btn-more:hover {
+  background-color: rgba(212, 193, 127, 0.4156862745);
+}
+
+.widget__title {
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.16;
+  margin-bottom: 20px;
+}
+.widget__title::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url("../../img/apartaments/up.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.location__row {
+  display: flex;
+  border: 1px solid rgba(212, 193, 127, 0.4156862745);
+}
+
+.location__btn {
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.location__btn--active {
+  background-color: #d4c17f;
 }/*# sourceMappingURL=main.css.map */

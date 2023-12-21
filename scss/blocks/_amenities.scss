@@ -27,6 +27,13 @@ linear-gradient(
     background-color: rgba(0, 128, 128, 0.715);
 }
 
+.amenities__item:hover .amenities__card-img,
+.amenities__card{
+    transform: scale(1.1);
+    filter: contrast(110%) brightness(1) saturate(1.2);
+    transition: transform 0.4s ease-in;
+    }
+
 .amenities__card{
     position: relative;
     display: inline-block;
@@ -42,6 +49,7 @@ linear-gradient(
         bottom: 15px;
         border: 3px double rgba(255, 255, 255, 0.4);
     }
+
 }
 
 .amenities__item-icon{
