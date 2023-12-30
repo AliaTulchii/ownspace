@@ -124,7 +124,7 @@ a.flat__card-link:hover{
 .flat__card--address{
     font-size: 14px;
     line-height: 1.14;
-    color: #a7a6a6;
+    color: #008080;
 }
 
 .btn-more{
@@ -142,7 +142,7 @@ a.flat__card-link:hover{
 
 //sidebar
 .widget{
-
+margin-bottom: 40px;
 }
 
 .widget__title{
@@ -177,20 +177,143 @@ a.flat__card-link:hover{
 
 .location__row{
 display: flex;
-border: 1px solid #d4c17f6a;
+
+}
+
+.location__checkbox{ 
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+    
+    &:checked + .location__btn{
+        background-color: $accent;
+    }
 }
 
 .location__btn{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50px;
     background-color: transparent;
 border: none;
 font-weight: normal;
 font-size: 14px;
 line-height: 16px;
-text-align: center;
 padding: 0 15px;
+border: 1px solid #d4c17f6a;
+cursor: pointer;
+transition: background 0.2s ease-in;
+
+&:hover{
+    background: #d4c17f6a;
+}
 }
 
-.location__btn--active{
-    background-color: $accent;
+//radio
+
+.radio{
+    display: flex;
+    cursor: pointer;
+
+    & + .radio{
+        margin-top: 15px;
+    }
+    
+}
+
+.radio__real{
+width: 1px;
+height: 1px;
+position: absolute;
+opacity: 0;
+appearance: none;
+
+    &:checked + .radio__fake::before{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        content: '';
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+        background-color: $accent;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.radio__fake{
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+width: 21px;
+height: 21px;
+margin-right: 10px;
+background-color: rgba(255, 255, 255, 0.301);
+border: 1px solid $accent;
+box-sizing: border-box;
+border-radius: 50%;
+}
+
+.radio__title{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+}
+
+
+.toggle__title{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+
+}
+
+.toggle__real{
+    width: 1px;
+height: 1px;
+position: absolute;
+opacity: 0;
+appearance: none;
+}
+
+.toggle__real:checked {
+
+    & ~ .toggle__title{
+        font-weight: 800;
+    }
+
+    & + .toggle__fake{
+        background-color: #edd16f6a;
+    }
+
+    & + .toggle__fake::before{
+        left: auto;
+        right: 2px;
+    }
+}
+
+.toggle__fake{
+    position: relative;
+    display: inline-block;
+    width: 37px;
+    height: 22px;
+    background: #ebe9e968;
+    border-radius: 10px;
+    border: 1px solid $accent;
+
+    &::before{
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        content: '';
+        width: 14px;
+        height: 14px;
+        background-color: $accent;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out
+    }
 }

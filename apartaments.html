@@ -30,6 +30,9 @@
                                     <a href="./about.html">About</a>
                                 </li>
                                 <li class="nav__list-item">
+                                    <a href="./apartaments.html">Apartaments</a>
+                                </li>
+                                <li class="nav__list-item">
                                     <a href="./contact.html">Contacts</a>
                                 </li>
                             </ul>
@@ -299,25 +302,78 @@
                         <div class="widget__body">
                             <div class="location">
                                 <div class="location__row">
-                                    <button class="location__btn location__btn--active">
+                                    <input type="checkbox" id="location-01" checked class="location__checkbox">
+                                     <label for="location-01" class="location__btn ">
                                         &lt; 10
-                                    </button>
-                                    <button class="location__btn location__btn--active">
+                                    </label>
+                                    <input type="checkbox" id="location-02" class="location__checkbox">
+                                    <label for="location-02" class="location__btn ">
                                         10-20
-                                    </button>
-                                    <button class="location__btn">
+                                    </label>
+                                    <input type="checkbox" id="location-03" class="location__checkbox">
+                                    <label for="location-03" class="location__btn">
                                         20-30
-                                    </button>
-                                    <button class="location__btn">
+                                    </label>
+                                    <input type="checkbox" id="location-04" class="location__checkbox"> 
+                                    
+                                    <label for="location-04" class="location__btn">
                                         30+
-                                    </button>
+                                    </label>
                                 </div>
                                 <div class="location__row">
-                                    <button class="location__btn">
+                                    <input type="checkbox" id="location-05" class="location__checkbox">
+                                    <label for="location-05" class="location__btn">
                                         Any
-                                    </button>
+                                    </label>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="widget">
+                        <div class="widget__title">
+                            Completion date
+                        </div>
+                        <div class="widget__body">
+                            <label class="radio">
+                                <input type="radio" class="radio__real" name="term" checked>
+                                <span class="radio__fake"></span>
+                                <span class="radio__title">Any</span>
+                            </label>
+                            
+
+                            <label class="radio">
+                                <input type="radio" class="radio__real" name="term">
+                                <span class="radio__fake"></span>
+                                <span class="radio__title">Was passed</span>
+                            </label>
+
+                            <label class="radio">
+                                <input type="radio" class="radio__real" name="term">
+                                <span class="radio__fake"></span>
+                                <span class="radio__title">In this year</span>
+                            </label>
+
+                            <label class="radio">
+                                <input type="radio" class="radio__real" name="term">
+                                <span class="radio__fake"></span>
+                                <span class="radio__title">In the next year</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        
+                        <div class="widget__body">
+                            <label class="toggle">
+                                <input type="checkbox" class="toggle__real" name="comssion" checked>
+                                <span class="toggle__fake"></span>
+                                <span class="toggle__title">Services 0%</span>
+                            </label>
+                            
+
                         </div>
                     </div>
                 </aside>
