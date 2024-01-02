@@ -143,7 +143,7 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   min-height: 840px;
-  padding: 30px 0 74px 0;
+  padding: 10px 0 74px 0;
   background: linear-gradient(180deg, #0d7a84 11.98%, rgba(45, 59, 60, 0.38) 51.04%, #0d7a84 82.19%), url("../img/saw.jpg");
 }
 
@@ -902,6 +902,10 @@ a.flat__card-link:hover {
   line-height: 1.18;
 }
 
+.toggle {
+  cursor: pointer;
+}
+
 .toggle__title {
   font-weight: 400;
   font-size: 16px;
@@ -933,10 +937,12 @@ a.flat__card-link:hover {
   position: relative;
   display: inline-block;
   width: 37px;
-  height: 22px;
+  height: 20px;
+  margin-right: 10px;
   background: rgba(235, 233, 233, 0.4078431373);
   border-radius: 10px;
   border: 1px solid #d4c17f;
+  vertical-align: bottom;
 }
 .toggle__fake::before {
   position: absolute;
